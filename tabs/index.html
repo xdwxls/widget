@@ -98,6 +98,7 @@
 </head>
 <body>
 	<div class="header">
+        <a href="https://github.com/xdwxls/widget" target="_blank">项目地址</a>
         <a href="/widget/">返回首页</a>
     </div>
     <div class="main">
@@ -118,10 +119,11 @@
 			</ul>
 		</div>
 		<script type="text/javascript">
-			new tabs(".tabs1", {
+			var j=new tabs(".tabs1", {
 				triggerType: 'click',
 				activeIndex: 2,
 			});
+			console.log(j)
 		</script>
 
 		<div class="code">
@@ -209,7 +211,7 @@
 		<div class="example">
 			<div class="call">
 				<h1>调用方法：</h1>
-				<p>$(selector).tabs(options,callback(api));</p>
+				<p>new tabs(selector,{options};</p>
 			</div>
 			<h2>options参数</h2>
 			<table>
